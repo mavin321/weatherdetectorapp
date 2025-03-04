@@ -57,26 +57,17 @@
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <p>We are still working on our website. Stay tuned for updates!</p>
-          </div>
-          <div class="countdown d-flex justify-content-center" data-count="2025/12/3">
-            <div>
-              <h3 class="count-days">482</h3>
-              <h4>Days</h4>
+          <div class="row">
+            {% if data.country_code %}
+            <div class="col-md-6 col-md-offset-3">
+              <h1>{{city}}</h1>
+              <h3>country code : {{data.country_code}}</h1>
+                <h5>coordinate : {{data.coordinate}}</h5>
+                <h5>temp : {{data.temp}}</h5>
+                <h5>pressure : {{data.pressure}} </h5>
+                <h5>humidity : {{data.humidity}}</h5>
             </div>
-            <div>
-              <h3 class="count-hours">6</h3>
-              <h4>Hours</h4>
-            </div>
-            <div>
-              <h3 class="count-minutes">49</h3>
-              <h4>Minutes</h4>
-            </div>
-            <div>
-              <h3 class="count-seconds">21</h3>
-              <h4>Seconds</h4>
-            </div>
+            {% endif %}
           </div>
 
           <center class="row">
@@ -93,9 +84,9 @@
           </center>
 
           <div class="social-links">
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-website"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/mavin321"><i class="bi bi-github"></i></a>
+            <a href="https://mavin321.pythonanywhere.com/"><i class="bi bi-website"></i></a>
+            <a href="https://linkedin.com/in/mavin-peter-65422725b"><i class="bi bi-linkedin"></i></a>
           </div>
 
         </div>
@@ -109,7 +100,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <p>This is a small weather app i created to detect weather at different cities</p>
       </div><!-- End Section Title -->
     </section><!-- /About Section -->
 
